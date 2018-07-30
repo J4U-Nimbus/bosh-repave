@@ -28,8 +28,9 @@ resources:
 - name: bosh-repave-repo
   type: git
   source:
-    uri: https://github.com/pivotalservices/bosh-repave.git
-    branch: master
+    uri: https://github.com/J4U-Nimbus/bosh-repave.git
+    branch: sandbox
+    private_key: {{lock-git-private-key}}
 - name: scheduler
   type: time
   source:
