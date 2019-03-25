@@ -1,0 +1,18 @@
+opsman-url: opsman.sb.stratus.albertsons.com
+opsman-username:  ((opsman_admin_username))
+opsman-password:  ((opsman_admin_password))
+opsman_client_id:       ((opsman_concourse_service_account_client_id))
+opsman_client_secret:   ((opsman_concourse_service_account_client_secret))
+skip-ssl-validation: true
+deployments: cf
+jobs: "diego_cell"
+repave-singleton-jobs: false
+perform-dry-run-only: false
+scheduler-time-window-start: 1:00 AM
+scheduler-time-window-stop: 2:00 AM
+scheduler-time-location: America/Los_Angeles
+lock-git-repo-uri: git@github.com:J4U-Nimbus/bosh-repave.git
+lock-git-repo-branch: sandbox-lock
+lock-pool-name: sandbox-pool
+git_private_key: ((stratusadmin_github_key.private_key))
+lock-git-private-key: ((stratusadmin_github_key.private_key))
